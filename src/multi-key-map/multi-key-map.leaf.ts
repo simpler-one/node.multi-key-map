@@ -6,7 +6,7 @@ import { MultiKeyMapNode } from './multi-key-map.node';
 
 export class MultiKeyMapLeaf<V> extends MultiKeyMapNode<V> {
 
-    private readonly map = new MetaMap<{}, V>();
+    private readonly map: MetaMap<{}, V> = new MetaMap<{}, V>();
 
     public constructor(
         i: number,

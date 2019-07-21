@@ -9,8 +9,8 @@ interface MapSet<K, V> {
 }
 
 export class MetaMap<K, V> {
-    private readonly map = new Map<K, V>();
-    private readonly notMap = new Map<K, V>();
+    private readonly map: Map<K, V> = new Map<K, V>();
+    private readonly notMap: Map<K, V> = new Map<K, V>();
 
 
     public set(key: Key<K>, value: V): void {

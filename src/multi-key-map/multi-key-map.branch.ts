@@ -8,7 +8,7 @@ import { Meta } from '../meta';
 
 export class MultiKeyMapBranch<V> extends MultiKeyMapNode<V> {
 
-    private readonly map = new MetaMap<{}, MultiKeyMapNode<V>>();
+    private readonly map: MetaMap<{}, MultiKeyMapNode<V>> = new MetaMap<{}, MultiKeyMapNode<V>>();
 
     public constructor(
         keyLength: number,
