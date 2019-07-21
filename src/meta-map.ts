@@ -1,9 +1,8 @@
 import { Meta } from './meta';
 import { MetaNot } from './meta/meta-not';
 import { Exactness } from './exactness';
+import { Key, Boxed } from './interface';
 
-type Boxed<T> = [T] | [];
-type Key<K> = K | MetaNot<K>;
 interface MapSet<K, V> {
     map: Map<K, V>;
     keys: Iterable<K>;
